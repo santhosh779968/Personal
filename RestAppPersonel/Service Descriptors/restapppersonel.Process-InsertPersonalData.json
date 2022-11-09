@@ -1,0 +1,50 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "InsertPersonalData",
+    "description" : "InsertPersonalData service"
+  },
+  "host" : "localhost:8081",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/insertpersonaldata" : {
+      "post" : {
+        "summary" : "postInsertPersonalData",
+        "description" : "postInsertPersonalData",
+        "operationId" : "post-insertpersonaldata",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertDataResposnse"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "InsertDataResposnse" : {
+      "type" : "object",
+      "required" : [ "Response" ],
+      "properties" : {
+        "Response" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
