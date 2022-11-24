@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/insertpersonaldata.InsertPersonalData-PersonalData.json",
+        "type": "generated"
+    }]
+}

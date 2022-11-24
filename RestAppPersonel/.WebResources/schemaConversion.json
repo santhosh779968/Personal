@@ -1,5 +1,0 @@
-{"records": [{
-    "jsonSchemaLocation": "/RestAppPersonel/Service Descriptors/restapppersonel.Process-InsertPersonalData.json",
-    "conversionType": "linked",
-    "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
-}]}

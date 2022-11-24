@@ -8,8 +8,16 @@
     <version>1.0.0-SNAPSHOT</version>
     <relativePath>../InsertPersonalData.application.parent</relativePath>
   </parent>
-  <artifactId>CommonResources</artifactId>
+  <artifactId>InsertPersonalData</artifactId>
   <packaging>bwmodule</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>com.tibco.plugins</groupId>
+      <artifactId>com.tibco.bw.palette.shared</artifactId>
+      <version>6.2.1300</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <outputDirectory>target/classes</outputDirectory>

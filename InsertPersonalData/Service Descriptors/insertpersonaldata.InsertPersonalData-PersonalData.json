@@ -1,0 +1,53 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "PersonalData",
+    "description" : "PersonalData service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/insertpersonaldata" : {
+      "post" : {
+        "summary" : "postPersonalData",
+        "description" : "postPersonalData",
+        "operationId" : "post-insertdata",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Resposnse_Msg"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Resposnse_Msg to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Resposnse_Msg"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Resposnse_Msg" : {
+      "type" : "object",
+      "required" : [ "Response" ],
+      "properties" : {
+        "Response" : {
+          "type" : "string"
+        },
+        "Correlation_ID" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
